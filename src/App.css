@@ -1,38 +1,150 @@
-.App {
-  text-align: center;
+/* App.css */
+
+body {
+	font-family: American Typewriter, serif;
+	background-color: #f389e7d8;
+	margin: 0;
+	padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-container {
+	max-width: 800px;
+	margin: 20px auto;
+	padding: 20px;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.typewriter-container{
+	background: #fdb3d5;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+.add-note{
+	color: rgb(216, 49, 238);
+	font-family: American Typewriter, serif;
+	font-size: 32px;
+
+}
+
+
+.typewriter h1 {
+	font-size:50px;
+	color: rgb(216, 49, 238);
+	font-family: American Typewriter, serif;
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+	border-right: .15em solid orange; /* The typwriter cursor */
+	white-space: nowrap; /* Keeps the content on a single line */
+	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+	letter-spacing: .15em; /* Adjust as needed */
+	animation: 
+	  typing 3.5s steps(30, end),
+	  blink-caret .5s step-end infinite;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  /* The typing effect */
+  @keyframes typing {
+	from { width: 0 }
+	to { width: 100% }
   }
-  to {
-    transform: rotate(360deg);
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+	from, to { border-color: transparent }
+	50% { border-color: rgb(216, 49, 238); }
   }
+h1 {
+	color: #333;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	margin-bottom: 8px;
+	font-size: 16px;
+}
+
+input {
+	margin-bottom: 15px;
+	padding: 10px;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.button1,
+.button2 {
+	margin-bottom: 15px;
+	padding: 10px;
+	font-size: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-sizing: border-box;
+	background: #fdb3d5;
+	color: rgb(216, 36, 240);
+	font-family: American Typewriter, serif;
+
+}
+
+.button1 {
+	width: 100%;
+	
+
+}
+
+.button2 {
+	width: 49%;
+
+}
+
+textarea {
+	margin-bottom: 15px;
+	padding: 10px;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-sizing: border-box;
+	resize: vertical;
+	height: 100px;
+	width: 100%;
+}
+
+button {
+	background-color: #4caf50;
+	color: #fff;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #fdb3d6c0;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+li {
+	margin-bottom: 15px;
+	padding: 10px;
+	background-color: #eee;
+	border-radius: 5px;
+}
+
+li strong {
+	font-size: 18px;
+	color: #333;
+}
+
+li p {
+	font-size: 16px;
+	color: #555;
 }
