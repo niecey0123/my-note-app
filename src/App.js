@@ -22,7 +22,7 @@ const App = () => {
 	const handleAddNote = () => {
 		// Add a new note to the server
 		axios
-			.post("https://noteapp-api-wn19.onrender.com/notes", { title, content })
+			.post("https://noteapp-api-wn19.onrender.com//notes", { title, content })
 			.then((response) => {
 				setNotes([...notes, response.data]);
 				if (!title || !content) {
