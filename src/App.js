@@ -14,7 +14,7 @@ const App = () => {
 	useEffect(() => {
 		// Fetch notes from the server
 		axios
-			.get("http://localhost:5000/api/notes")
+			.get("https://noteapp-api-wn19.onrender.com")
 			.then((response) => setNotes(response.data))
 			.catch((error) => console.error("Error fetching notes:", error));
 	}, []);
@@ -22,7 +22,7 @@ const App = () => {
 	const handleAddNote = () => {
 		// Add a new note to the server
 		axios
-			.post("http://localhost:5000/api/notes", { title, content })
+			.post("https://noteapp-api-wn19.onrender.com/notes", { title, content })
 			.then((response) => {
 				setNotes([...notes, response.data]);
 				if (!title || !content) {
@@ -37,7 +37,7 @@ const App = () => {
 	const handleEditNote = (id, updatedTitle, updatedContent) => {
 		// Update note by ID
 		axios
-			.put(`http://localhost:5000/api/notes/${id}`, {
+			.put(`https://noteapp-api-wn19.onrender.com/notes/${id}`, {
 				title: updatedTitle,
 				content: updatedContent,
 			})
@@ -53,7 +53,7 @@ const App = () => {
 	const handleDeleteNote = (id) => {
 		// Delete note by ID
 		axios
-			.delete(`http://localhost:5000/api/notes/${id}`)
+			.delete(`https://noteapp-api-wn19.onrender.com/notes/${id}`)
 			.then((response) => {
 				const updatedNotes = notes.filter((note) => note._id !== id);
 				setNotes(updatedNotes);
