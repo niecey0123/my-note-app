@@ -6,6 +6,8 @@ import "./App.css";
 import NoteList from "./Components/NoteList";
 import AddNote from "./Components/AddNote";
 
+export const URL = process.env.REACT_APP_SERVER_URL;
+
 const App = () => {
 	const [notes, setNotes] = useState([]);
 	const [title, setTitle] = useState("");
@@ -22,7 +24,7 @@ const App = () => {
 	const handleAddNote = () => {
 		// Add a new note to the server
 		axios
-			.post("https://noteapp-api-wn19.onrender.com/api/notes", { title, content })
+			.post(`${URL}api/notes`, { title, content })
 			.then((response) => {
 				setNotes([...notes, response.data]);
 				if (!title || !content) {
