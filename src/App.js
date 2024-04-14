@@ -14,7 +14,7 @@ const App = () => {
 	useEffect(() => {
 		// Fetch notes from the server
 		axios
-			.get("https://noteapp-api-wn19.onrender.com")
+			.get("https://noteapp-api-wn19.onrender.com/notes")
 			.then((response) => setNotes(response.data))
 			.catch((error) => console.error("Error fetching notes:", error));
 	}, []);
