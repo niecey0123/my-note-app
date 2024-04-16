@@ -9,6 +9,7 @@ const NoteList = ({ notes, onEditNote, onDeleteNote }) => {
 				<li key={note._id}>
 					<strong>{note.title}</strong>
 					<p>{note.content}</p>
+					<p>{note.updatedAt}</p>
 					<button
 						className="button2"
 						style={{ marginRight: "15px" }}
@@ -32,6 +33,7 @@ const NoteList = ({ notes, onEditNote, onDeleteNote }) => {
 			))}
 		</ul>
 	);
+
 };
 
 export default NoteList;
