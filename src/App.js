@@ -6,7 +6,7 @@ import "./App.css";
 import NoteList from "./Components/NoteList";
 import AddNote from "./Components/AddNote";
 
-export const URL = process.env.REACT_APP_SERVER_URL;
+export const URL = "https://noteapp-api-wn19.onrender.com";
 
 const App = () => {
 	const [notes, setNotes] = useState([]);
@@ -16,7 +16,7 @@ const App = () => {
 	useEffect(() => {
 		// Fetch notes from the server
 		axios
-			.get("https://noteapp-api-wn19.onrender.com/api/notes")
+			.get(`${URL}/api/notes`)
 			.then((response) => setNotes(response.data))
 			.catch((error) => console.error("Error fetching notes:", error));
 	}, []);
@@ -39,7 +39,7 @@ const App = () => {
 	const handleEditNote = (id, updatedTitle, updatedContent) => {
 		// Update note by ID
 		axios
-			.put(`https://noteapp-api-wn19.onrender.com/api/notes/${id}`, {
+			.put(`${URL}/api/notes/${id}`, {
 				title: updatedTitle,
 				content: updatedContent,
 			})
@@ -55,7 +55,7 @@ const App = () => {
 	const handleDeleteNote = (id) => {
 		// Delete note by ID
 		axios
-			.delete(`https://noteapp-api-wn19.onrender.com/api/notes/${id}`)
+			.delete(`${URL}/api/notes/${id}`)
 			.then((response) => {
 				const updatedNotes = notes.filter((note) => note._id !== id);
 				setNotes(updatedNotes);
