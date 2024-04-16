@@ -24,7 +24,7 @@ const App = () => {
 	const handleAddNote = () => {
 		// Add a new note to the server
 		axios
-			.post(`${URL}api/notes`, { title, content })
+			.post(`${URL}/api/notes`, { title, content })
 			.then((response) => {
 				setNotes([...notes, response.data]);
 				if (!title || !content) {
