@@ -17,6 +17,7 @@ const uri = "mongodb+srv://scrumpler11:twinsarecool@cluster0.ytysgnv.mongodb.net
 // Middleware
  const corsOptions = {
      origin: 'https://my-note-app-38wr.onrender.com/',//(https://your-client-app.com)
+     credentials:true,     
     optionsSuccessStatus: 200,
  };
 // app.use(function(req, res, next) {
