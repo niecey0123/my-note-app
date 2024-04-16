@@ -25,7 +25,7 @@ const uri = "mongodb+srv://scrumpler11:twinsarecool@cluster0.ytysgnv.mongodb.net
 //     next();
 //   });
   app.use(function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "https://my-note-app-38wr.onrender.com"); // update to match the domain you will make the request from
+    res.header("Access-Control-Allow-Origin", "https://my-note-app-38wr.onrender.com", "https://my-note-app-38wr.onrender.com/api/id"); // update to match the domain you will make the request from
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     next();
   });
