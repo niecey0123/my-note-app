@@ -1,6 +1,7 @@
 // components/NoteList.js
 
 import React from "react";
+import CurrentDate from "./CurrentDate";
 
 const NoteList = ({ notes, onEditNote, onDeleteNote }) => {
 	return (
@@ -9,6 +10,7 @@ const NoteList = ({ notes, onEditNote, onDeleteNote }) => {
 				<li key={note._id}>
 					<strong>{note.title}</strong>
 					<p>{note.content}</p>
+					<CurrentDate />
 					<button
 						className="button2"
 						style={{ marginRight: "15px" }}
