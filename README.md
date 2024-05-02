@@ -8,7 +8,7 @@ In this project, I developed a simple note list application using the MERN stack
 <img width="1638" alt="image" src="https://github.com/niecey0123/my-note-app/assets/47402849/67d2b4af-e992-4dde-8d1c-0ec5ec51f1f8">
 
 
-## Approach to Application Development
+# Approach to Application Development
 
 ## Planning: 
 Before starting the development process, I outlined the basic features and functionalities of the application. This included user stories, wireframes, and database schema design.
@@ -22,7 +22,7 @@ I implemented the frontend features using React.js. This included creating compo
 I used CSS for styling the frontend components to ensure a visually appealing user interface. 
 
 
-### Software Engineering Principles Applied
+# Software Engineering Principles Applied
 
 ## Modularity: 
 I organized the codebase into separate modules and components to promote reusability and maintainability. Each component focused on a specific task, making it easier to understand and update in the future.
@@ -32,7 +32,7 @@ I designed the application architecture with scalability in mind, allowing for e
 ## Code Documentation: 
 I thoroughly documented the codebase using comments and README files to provide clear instructions and explanations for other developers who may work on the project in the future.
 
-### `Challenges Faced
+# `Challenges Faced
 
 ## Asynchronous Operations:
 Managing asynchronous operations in both frontend and backend code was challenging, especially when handling database operations and API requests. I addressed this by using asynchronous programming techniques like Promises and async/await.
