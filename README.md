@@ -11,7 +11,7 @@ In this project, I developed a simple note list application using the MERN stack
 # Approach to Application Development
 
 ## Planning: 
-Before starting the development process, I outlined the basic features and functionalities of the application. This included user stories, wireframes, and database schema design.
+Before starting the development process, I outlined the basic features and functionalities of the application. This included wireframes, and database schema design.
 Setting Up the Project: I initialized a new MERN stack project using create-react-app for the frontend and set up a basic Express.js server for the backend. MongoDB was chosen as the database to store to-do list data.
 ## Backend Development:
 I implemented the backend logic using Express.js and Node.js. This included setting up routes for handling CRUD operations (Create, Read, Update, Delete) for to-do list items.
