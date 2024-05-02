@@ -1,6 +1,6 @@
 # MERN Note List Application Development Report
 
-In this project, I developed a simple to-do list application using the MERN stack (MongoDB, Express.js, React.js, and Node.js). The goal was to create a maintainable, reusable, testable, flexible, and efficient application that allows users to add, view, and delete items from a to-do list
+In this project, I developed a simple note list application using the MERN stack (MongoDB, Express.js, React.js, and Node.js). The goal was to create a maintainable, reusable, testable, flexible, and efficient application that allows users to add, view, and delete items from a to-do list
 
 ### Link to deployed website
 (https://my-note-app-38wr.onrender.com/)
